@@ -4,7 +4,7 @@ pipeline {
       stage("verify tools") {
           steps {
               sh '''
-               echo sh(script: 'env|sort', returnStdout: true)              
+               env             
                curl --version
                 
               '''
