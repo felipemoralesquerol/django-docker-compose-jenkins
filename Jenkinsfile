@@ -6,7 +6,8 @@ pipeline {
               sh '''
                env             
                curl --version
-                
+               docker version
+               docker info 
               '''
           }
       }
